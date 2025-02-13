@@ -1,0 +1,74 @@
+/* header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    height: 50px;
+}
+
+.search-bar input {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* Login and Register Buttons */
+.login-button, .register-button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button {
+    background: #ff4b5c;
+    color: white;
+}
+
+.register-button {
+    background: #4CAF50;
+    color: white;
+}
+
+.login-button:hover {
+    background: #e03e4f;
+}
+
+.register-button:hover {
+    background: #45a049;
+}
+
+/* User Profile Icon */
+.user-profile {
+    width: 40px;
+    height: 40px;
+    background: #4CAF50;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.user-profile:hover {
+    background: #388E3C;
+}
