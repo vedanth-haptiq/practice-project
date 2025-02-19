@@ -5,6 +5,8 @@ import './login.css';
 
 const Login = () => {
     const [email, setEmail] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
     const [password, setPassword] = useState('');
     const navigate = useNavigate();
 
@@ -12,8 +14,8 @@ const Login = () => {
         e.preventDefault();
 
         const userData = {
-            firstName: "John",
-            lastName: "Doe",
+            firstName: firstName,
+            lastName: lastName,
             email: email
         };
 
@@ -27,6 +29,24 @@ const Login = () => {
         <div className="login-container">
             <form onSubmit={handleLogin} className="login-form">
                 <h2>Login</h2>
+                <div className="form-group">
+                    <label>lastName:</label>
+                    <input
+                        type="lastName"
+                        value={lastName}
+                        onChange={(e) => setLastName(e.target.value)}
+                        required
+                    />
+                </div>
+                <div className="form-group">
+                    <label>firstName:</label>
+                    <input
+                        type="firstName"
+                        value={firstName}
+                        onChange={(e) => setFirstName(e.target.value)}
+                        required
+                    />
+                </div>
                 <div className="form-group">
                     <label>Email:</label>
                     <input

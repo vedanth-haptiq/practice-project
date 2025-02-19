@@ -25,9 +25,7 @@ const Header = () => {
             <div className="icon">
                 <img src="/DRF Logo 112x56.svg" alt="Icon" />
             </div>
-            <div className="search-bar">
-                <input type="text" placeholder="Search..." />
-            </div>
+
             <div className="buttons">
                 {user ? (
                     <div className="user-profile" onClick={handleLogout}>
